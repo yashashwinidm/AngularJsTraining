@@ -1,0 +1,30 @@
+<html ng-app="abc">
+    <head>
+        <title> angularjs</title>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        
+    </head>
+    <body>
+        <div ng-controller="ctrl">
+             
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>company</th>
+                        <th>contact</th>
+                        <th>country</th>
+                        </tr>
+                        <tbody>
+                            <tr ng-repeat="cd in cds">
+                                <td>{{cd.company}}</td>
+                                <td>{{cd.contact}}</td>
+                            <td>{{cd.country}}</td>                            
+                        </tr>
+                        </tbody>
+                </thead>
+            </table>
+              
+</body>
+</html>

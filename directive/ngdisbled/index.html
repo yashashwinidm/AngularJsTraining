@@ -1,0 +1,22 @@
+<html ng-app="myapps">
+    <head>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+</head>
+<body>
+<div ng-controller="ctrl">
+
+        Click here to disable all the form fields:<input type="checkbox" ng-model="all"><br>
+        <br>
+        
+        <input type="text" ng-disabled="all">
+        <input type="radio" ng-disabled="all">
+        <select ng-disabled="all">
+          <option>Female</option>
+          <option>Male</option>  
+        </select>
+        
+</div>
+</body>
+
+</html>

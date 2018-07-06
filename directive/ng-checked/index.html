@@ -1,0 +1,17 @@
+<html ng-app="myapps">
+    <head>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+</head>
+<body>
+<div ng-controller="ctrl">
+        <p>My cars:</p>
+        <input type="checkbox" ng-model="all"> Check all<br><br>
+        <input type="checkbox" ng-checked="all">Volvo<br>
+        <input type="checkbox" ng-checked="all">Ford<br>
+        <input type="checkbox" ng-checked="all">Mercedes
+        <p>Click "Check all" to check all three cars.</p>
+</div>
+</body>
+
+</html>

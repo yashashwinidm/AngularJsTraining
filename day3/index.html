@@ -1,0 +1,15 @@
+<html ng-app="abc">
+    <head>
+        <title> angularjs</title>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        
+    </head>
+    <body>
+        <div ng-controller="ctrl" ng-init="mycol"='blue' style="background-color:{{mycol}}">
+            <input style="color:{{mycol}};background-color:{{mycol}}" ng-model="mycol">
+            <h1>{{ads}}</h1>
+                <p>{{a}}</p>
+        </div>
+</body>
+</html>

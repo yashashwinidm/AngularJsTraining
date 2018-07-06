@@ -1,0 +1,38 @@
+<html ng-app="abc">
+    <head>
+        <title>detailuhns</title>
+        <style>
+            table,th,td {
+                border:1px solid black;
+                border-collapse:collapse;
+                padding:5px;
+            }
+            </style>
+            <title> angularjs</title>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        
+    </head>
+    <body>
+        <div ng-controller="ctrl">
+            <h>{{ads}}</h>
+            <h>{{a}}</h>
+            </div> 
+            <table>
+                <thead>
+                    <tr>
+                        <th>company</th>
+                        <th>contact</th>
+                        <th>country</th>
+                        </tr>
+                        </thead>
+</tbody>
+<tr ng-repeat="cd in cds track by $index">
+    <td>{{$index+1}}</td>
+    <td>{{cd.company}}</td>
+    <td>{{cd.contact}}</td>
+        <td>{{cd.country}}</td>
+</tr>                
+</tbody></head>
+</table>
+           </html>     

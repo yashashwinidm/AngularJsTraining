@@ -1,0 +1,16 @@
+<html ng-app="abc">
+    <head>
+        <title> angularjs</title>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        
+    </head>
+    <body>
+        <div ng-controller="ctrl">
+                <div ng-repeat="abc in values track by $index">
+<h2 ng-if=$odd>{{abc}}</h2>
+            </div>
+              </div>
+              
+</body>
+</html>
